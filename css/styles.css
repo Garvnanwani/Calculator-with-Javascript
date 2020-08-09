@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #02AAB0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00CDAC, #02AAB0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00CDAC, #02AAB0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.wrapper {
+    margin-top: 2rem;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    min-width: 23rem;
+    max-height: 35rem;
+    min-height: 32rem;
+    background: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 25px 17px 15px 0px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-rows: 8% 25% auto;
+}
+
+.calculator-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+
+.calculator-body {
+    background: #38485C;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.calculator-footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 0.7rem;
+    justify-content: space-around;
+    grid-row-gap: 0.7rem;
+    background: #292F36;
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.8rem;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.calculator-footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    border-radius: 50%;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5sec all;
+}
+
+.btn {
+    background-color: #12ebb1;
+}
+
+.btn-dark {
+    background-color: #313d4b;
+    font-size: 1.4rem;
+}
+
+.calculator-footer div:hover {
+    background: #525d68;
+}
+
+.btn-dark:hover {
+    background: #292F36;
+}
+
+footer {
+    margin: 1rem auto;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+
+@media only screen and (max-width: 450px) {
+    html {
+        font-size: 13px;
+    }
+}
